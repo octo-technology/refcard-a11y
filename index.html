@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="./octo-logo.png" alt=""/>
+        <img src="./octo-logo.webp" alt=""/>
         <p lang="en">Quick reference card</p>
         <ul>
             <li>
@@ -24,7 +24,7 @@
 
 
     <h2>Vos utilisateurs</h2>
-    <p>Savez-vous <strong>vraiment</strong> comment vos utilisateurs·rices visitent votre interface ?</p>
+    <p>Savez-vous <strong>vraiment</strong> comment vos utilisateurs&middot;rices visitent votre interface ?</p>
 
     <!--    <h4>Croyance</h4>-->
     <!--    &lt;!&ndash; figcaption? pour faire le lien entre schema utilisateur-interface et diversité associé &ndash;&gt;-->
@@ -105,7 +105,7 @@
                 inclusif et accessible
             </li>
         </ul>
-        <img src="/donut.jpg" alt=""/>
+        <img src="/donut.webp" alt=""/>
     </figure>
     <p>Tous les profils sont concernés. C'est un travail d'équipe sous la houlette des <abbr lang="en" title="Product Owners">PO</abbr></p>
 
@@ -142,6 +142,53 @@
     </ul>
 
     <h2><span lang="en">Stack</span> Technique</h2>
+
+    <p>
+        Le <dfn id="define-html"><abbr lang="en" title="HyperText Markup Language">HTML</abbr></dfn> structure et porte l'information d'une page web. Il est nativement accessible à condition d'utiliser les
+        balises en respectant leurs valeurs sémantiques. Exemple : <code>&lt;div&gt;</code> et <code>&lt;span&gt;</code> n'ont pas de valeur sémantique,
+        elles servent à mettre en forme et grouper des éléments.
+    </p>
+    <p>
+        Chaque composant <abbr lang="en" title="HyperText Markup Language">HTML</abbr> apporte par défaut des comportements facilitant l'interaction avec l'application.
+        Sans coût supplémentaire, il devient alors plus facile et moins frustrant de naviguer sur l'application.
+    </p>
+    <p>
+        Exemple : Utiliser une balise <code>&lt;a&gt;</code> pour un lien permet à l'utilisateur&middot;rice de savoir si iel l'a déjà visité.
+    </p>
+    <p>
+        <strong>Le <dfn id="define-css"><abbr lang="en" title="Cascading Style Sheet">CSS</abbr></dfn> permet de mettre en forme l'information déjà présente sur la page via le <abbr lang="en" title="HyperText Markup Language">HTML</abbr></strong>.
+        Si une information est portée seulement par le <abbr lang="en" title="Cascading Style Sheet">CSS</abbr>, on risque de ne pas la rendre accessible à tous
+        les utilisateur&middot;ices.
+    </p>
+    <p>
+        Le <dfn id="define-js">JavaScript</dfn> régit les interactions complexes (cartes interactives, notifications&hellip;).
+        Dans la plupart des cas, il ne sera pas nécessaire.
+        Il permet de coder des composants au-delà de ce qui est proposé par le <abbr lang="en" title="HyperText Markup Language">HTML</abbr>.
+    </p>
+    <p>
+        <dfn id="define-aria" lang="en"><abbr>ARIA</abbr> (Accessible Rich Internet Applications)</dfn> ; un ensemble d'attributs pour enrichir le <abbr lang="en" title="HyperText Markup Language">HTML</abbr> pour :
+    </p>
+    <ul>
+        <li>expliciter les liens entre éléments de la page, par exemple : lier une image à sa description</li>
+        <li>expliciter l'état d'un élément, par exemple : un onglet actif.</li>
+    </ul>
+    <p>
+        <strong>Il permet de donner plus d'informations aux technologies d'assistance (lecteur d'écran&hellip;).</strong>
+        À utiliser avec parcimonie : <strong>pas d'attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> vaut mieux qu'un attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> mal renseigné.</strong>
+    </p>
+
+    <img src="pyramid-tech.webp" alt="">
+
+    <!--
+- [X] abbr
+- [X] lang
+- [X] ...
+- [X] <code>
+- [X] middot
+- [X] dfn
+- [] links to dfn
+-->
+
 
     <h2>Comment vérifier ?</h2>
 
