@@ -146,31 +146,35 @@
     <p>
         L'accessibilité web repose sur le langage <abbr lang="en" title="HyperText Markup Language">HTML</abbr> auquel peuvent s'ajouter les langages <abbr lang="en" title="Cascading Style Sheet">CSS</abbr>, JavaScript et une touche d'<abbr lang="en" title="(Accessible Rich Internet Applications)">ARIA</abbr>.
     </p>
-    <p>
-        Le <dfn id="define-html"><abbr lang="en" title="HyperText Markup Language">HTML</abbr></dfn> structure et porte l'information d'une page web.
-        Ses balises apportent la sémantique : un bouton n'est pas un lien, qui n'est pas une <code>&lt;div&gt;</code>. Chaque composant <abbr lang="en" title="HyperText Markup Language">HTML</abbr> embarque nativement les comportements d'interaction attendus, de façon accessible : un <code>&lt;button&gt;</code> est déjà actionnable au clavier.
-    </p>
-    <p>
-        <strong>Le <dfn id="define-css"><abbr lang="en" title="Cascading Style Sheet">CSS</abbr></dfn> met en forme l'information</strong> présente dans le <abbr lang="en" title="HyperText Markup Language">HTML</abbr> de la page.
-        L'usage du <abbr lang="en" title="Cascading Style Sheet">CSS</abbr> uniquement ne rendra pas accessible l'information à tout le monde.
-    </p>
-    <p>
-        <strong>Le <dfn id="define-js">JavaScript</dfn> régit les interactions complexes,</strong> comme l'affichage de notifications ou une carte interactive.
-        Dans la plupart des cas, il ne sera pas nécessaire.
-        Il permet de coder des composants au-delà de ce qui est disponible en <abbr lang="en" title="HyperText Markup Language">HTML</abbr>.
-    </p>
-    <p>
-        <strong><dfn id="define-aria" lang="en"><abbr>ARIA</abbr> (Accessible Rich Internet Applications)</dfn></strong> propose un ensemble d'attributs qui étendent le <abbr lang="en" title="HyperText Markup Language">HTML</abbr>.
-        Il donne <strong>plus d'information aux technologies d'assistance</strong> :
-    </p>
-    <ul>
-        <li>en explicitant les liens entre les éléments, par exemple l'image et sa description.</li>
-        <li>en explicitant l'état d'un élément, par exemple la sélection en cours dans une liste.</li>
-        <li>en étendant la sémantique, par exemple un onglet fait d'un composant <code>&lt;button&gt;</code> sera enrichi par le <code>role="tab"</code></li>
-    </ul>
-    <p>
-        À utiliser avec parcimonie : <strong>pas d'attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> vaut mieux qu'un attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> mal renseigné.</strong>
-    </p>
+    <ol>
+        <li>
+            <strong>Le <dfn id="define-html"><abbr lang="en" title="HyperText Markup Language">HTML</abbr></dfn> structure l'information.</strong>
+            Ses balises apportent la sémantique : un bouton n'est pas un lien, qui n'est pas une <code>&lt;div&gt;</code>. Chaque composant <abbr lang="en" title="HyperText Markup Language">HTML</abbr> embarque nativement les comportements d'interaction attendus, de façon accessible : un <code>&lt;button&gt;</code> est déjà actionnable au clavier.
+        </li>
+        <li>
+            <strong>Le <dfn id="define-css"><abbr lang="en" title="Cascading Style Sheet">CSS</abbr></dfn> met en forme l'information</strong> présente dans le <abbr lang="en" title="HyperText Markup Language">HTML</abbr> de la page.
+            L'usage du <abbr lang="en" title="Cascading Style Sheet">CSS</abbr> uniquement ne rendra pas accessible l'information à tout le monde.
+        </li>
+        <li>
+            <strong>Le <dfn id="define-js">JavaScript</dfn> régit les interactions complexes,</strong> comme l'affichage de notifications ou une carte interactive.
+            Dans la plupart des cas, il ne sera pas nécessaire.
+            Il permet de coder des composants au-delà de ce qui est disponible en <abbr lang="en" title="HyperText Markup Language">HTML</abbr>.
+        </li>
+        <li>
+            <p>
+                <strong><dfn id="define-aria" lang="en"><abbr>ARIA</abbr> (Accessible Rich Internet Applications)</dfn></strong> propose un ensemble d'attributs qui étendent le <abbr lang="en" title="HyperText Markup Language">HTML</abbr>.
+                Il donne <strong>plus d'information aux technologies d'assistance</strong> :
+            </p>
+            <ul>
+                <li>en explicitant les liens entre les éléments, par exemple l'image et sa description;</li>
+                <li>en explicitant l'état d'un élément, par exemple la sélection en cours dans une liste;</li>
+                <li>en étendant la sémantique, par exemple un onglet fait d'un composant <code>&lt;button&gt;</code> sera enrichi par le <code>role="tab"</code></li>
+            </ul>
+            <p>
+                À utiliser avec parcimonie : <strong>pas d'attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> vaut mieux qu'un attribut <abbr lang="en" title="Accessible Rich Internet Application">ARIA</abbr> mal renseigné.</strong>
+            </p>
+        </li>
+    </ol>
 
     <img src="pyramid-tech.webp"
          alt="L'accessibilité se repose avant tout sur le HTML, puis le CSS, le Javascript et enfin ARIA">
