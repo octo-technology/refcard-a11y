@@ -217,27 +217,27 @@
 
     <h2>Paliers <abbr title="Accessibility" lang="en">A11y</abbr></h2>
 
-    <details>
-        <summary>Alternative</summary>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Niveau de maturité de l'organisation</th>
-                    <th scope="col">Test à introduire</th>
-                    <th scope="col">Nouvelle compétence ou profil mobilisé</th>
-                    <th scope="col">Processus introduit ou contenu produit</th>
-                    <th scope="col">Moyen de progression</th>
-                    <th scope="col">Niveau de conformité <abbr title="Web Content Accessibility Guidelines" lang="en">WCAG</abbr></th>
-                </tr>
-            </thead>
-            <tbody>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Paliers de maturité</th>
+                <th scope="col">Test à introduire</th>
+                <th scope="col">Rôles clés</th>
+                <th scope="col">Processus introduits ou contenu produits</th>
+                <th scope="col">Moyens de progression</th>
+                <th scope="col">Objectif de fin de palier (en pourcentage de conformité au RGAA)</th>
+                <th scope="col">Mention obligatoire associée</th>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
                 <th scope="row">L'accessibilité n'est pas prise en compte</th>
                 <td>Validation HTML</td>
                 <td></td>
                 <td></td>
                 <td>Montée en compétences</td>
-                <td>0% (Non conforme)</td>
+                <td>0%</td>
+                <td rowspan="2">Non conforme</td>
             </tr>
             <tr>
                 <th scope="row">L'accessibilité est introduite dans les tests</th>
@@ -245,7 +245,7 @@
                 <td>Développement <a href="#define-html"><abbr lang="en" title="HyperText Markup Language">HTML</abbr></a> sémantique</td>
                 <td></td>
                 <td>Montée en compétences</td>
-                <td>Entre 0% et 25% (Non conforme)</td>
+                <td>25%</td>
             </tr>
             <tr>
                 <th scope="row">L'accessibilité
@@ -254,35 +254,56 @@
                 <td></td> <!-- descendre PO ici? -->
                 <td>Coopération Design & Dev</td>
                 <td>Fabrication accessible</td>
-                <td>Entre 25% et 50% (Partiellement conforme)</td>
+                <td>50%</td>
+                <td rowspan="2">Partiellement conforme</td>
             </tr>
             <tr>
                 <th scope="row">L'accessibilité devient une volonté stratégique</th>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Audit de conformité</td>
+                <td>
+                    <ul>
+                        <li lang="en">Product Owner</li>
+                        <li>Auditeur/trice expert·e</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>L'accessibilité est spécifiée dans les US</li>
+                        <li>Mise à jour des mentions obligatoires</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Fabrication accessible</li>
+                        <li>Expertise tierce</li>
+                    </ul>
+                </td>
+                <td>75%</td>
             </tr>
             <tr>
                 <th scope="row">L'accessibilité imprègne la culture</th>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Tests avec lecteur d'écran</td>
+                <td>
+                    <ul>
+                        <li>Rédaction et production de contenu</li>
+                        <li>Référent·e accessibilité</li>
+                    </ul>
+                </td>
+                <td>Production de contenus accessibles</td>
+                <td>Expertise tierce</td>
+                <td>100% - Niveau légal requis</td>
+                <td rowspan="2">Totalement conforme</td>
             </tr>
             <tr>
                 <th scope="row">L'accessibilité se déploie à l'échelle</th>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Tests d'utilisabilité avec handicapé•es</td>
+                <td lang="en">UX Designer</td>
+                <td>Bibliothèque de composants accessibles</td>
+                <td>Amélioration UX</td>
+                <td>100% - Niveau légal requis</td>
             </tr>
-            </tbody>
-        </table>
-    </details>
+        </tbody>
+    </table>
 
     <footer>
         <p>On ne <strong>corrige pas</strong> l'accessibilité, on <strong>fabrique</strong> accessible.</p>
