@@ -276,6 +276,81 @@
     </aside>
     <p>La pratique <strong>régulière</strong> de ces tests permet de maintenir un bon niveau d'accessibilité. Ils précédent l'audit qui établit le taux de conformité atteint (à planifier une fois par an). Il est bienvenu de les compléter par des tests avec lecteur d'écran puis par tests d'utilisabilité avec des personnes en situation de handicap.</p>
 
+    <h2>Paliers <abbr title="Accessibility" lang="en">A11y</abbr></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Paliers de maturité</th>
+                <th scope="col">Test à introduire</th>
+                <th scope="col">Rôles clés</th>
+                <th scope="col">Processus introduits ou contenu produits</th>
+                <th scope="col">Objectif de fin de palier (en pourcentage de conformité au RGAA)</th>
+                <th scope="col">Mention obligatoire associée</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">L'accessibilité n'est pas prise en compte</th>
+                <td>Validation HTML</td>
+                <td></td>
+                <td></td>
+                <td>0%</td>
+                <td rowspan="2">Non conforme</td>
+            </tr>
+            <tr>
+                <th scope="row">L'accessibilité est introduite dans les tests</th>
+                <td>Tests <abbr title="Accessibility" lang="en">A11y</abbr> automatisés</td>
+                <td>Développement <a href="#define-html"><abbr lang="en" title="HyperText Markup Language">HTML</abbr></a> sémantique</td>
+                <td></td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <th scope="row">L'accessibilité
+                    est incorporée dans les processus</th>
+                <td>Recette fonctionnelle 10 Easy Checks</td>
+                <td lang="en">Product Owner</td> <!-- descendre PO ici? -->
+                <td>Coopération Design & Dev</td>
+                <td>50%</td>
+                <td rowspan="2">Partiellement conforme</td>
+            </tr>
+            <tr>
+                <th scope="row">L'accessibilité devient une volonté stratégique</th>
+                <td>Audit de conformité</td>
+                <td>
+                    Auditeur/trice expert·e
+                </td>
+                <td>
+                    <ul>
+                        <li>L'accessibilité est spécifiée dans les US</li>
+                        <li>Mise à jour des mentions obligatoires</li>
+                    </ul>
+                </td>
+                <td>75%</td>
+            </tr>
+            <tr>
+                <th scope="row">L'accessibilité imprègne la culture</th>
+                <td>Tests avec lecteur d'écran</td>
+                <td>
+                    <ul>
+                        <li>Rédaction et production de contenu</li>
+                        <li>Référent·e accessibilité</li>
+                    </ul>
+                </td>
+                <td>Production de contenus accessibles</td>
+                <td>100% - Niveau légal requis</td>
+                <td rowspan="2">Totalement conforme</td>
+            </tr>
+            <tr>
+                <th scope="row">L'accessibilité se déploie à l'échelle</th>
+                <td>Tests d'utilisabilité avec handicapé•es</td>
+                <td lang="en">UX Designer</td>
+                <td>Bibliothèque de composants accessibles</td>
+                <td>100% - Niveau légal requis</td>
+            </tr>
+        </tbody>
+    </table>
+
     <footer>
         <p>On ne <strong>corrige pas</strong> l'accessibilité, on <strong>fabrique</strong> accessible.</p>
         <img src="" alt="OCTO Technology, Part of Accenture" lang="en">
